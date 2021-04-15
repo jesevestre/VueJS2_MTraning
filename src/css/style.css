@@ -1,0 +1,329 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+
+.maxTraining{
+  margin-top: 10px;
+  width: 45%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown-item {
+  font-weight: bold;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #222 !important;
+}
+
+.text-warning {
+  color: rgb(245,208,72) !important;
+}
+
+button i {
+  color: #333;
+}
+
+h2{
+  color: #333;
+  background: -webkit-linear-gradient( #fff 0%, 
+  #fff 45%, rgb(245,208,72) 46%, rgb(245,208,72) 54%, #fff 
+  54%, #fff 100%);
+  width: 80%;
+  margin-left: 10%;
+}
+
+h2 span{
+  background:#fff;
+  padding:0 20px;
+}
+
+/* Effet zoom*/
+.profilCoach{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#maxime{
+  margin-left: 80%;
+}
+
+.inner{
+  overflow: hidden;
+}
+
+.inner img{
+  transition: all 1.5s ease;
+}
+
+.inner:hover img{
+  transform: scale(1.1);
+}
+
+/* CSS du carousel */
+.carousel img{
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: -5px; /*-12px*/
+}
+
+.carousel__nav{
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+
+.carousel__nav i{
+  margin-left: -2px;
+}
+
+.carousel__nav.carousel__next{
+  position: absolute;
+  top: 50%;
+  margin-top:-31px;
+  left: 5px;
+  width: 35px;
+  height: 35px;
+  right: 10px;
+  left: auto;
+}
+
+.carousel__pagination{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.carousel__pagination button{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 15px;
+  margin: 0 4px;
+}
+
+.carousel__pagination button.active{
+  background-color: #FFF;
+}
+
+.slide-right-enter-active{
+  animation: slideRightIn 2s;
+}
+
+.slide-right-leave-active{
+  animation: slideRightOut 2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes slideRightIn{
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); };
+}
+
+@keyframes slideRightOut{
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); };
+}
+
+.slide-left-enter-active{
+  animation: slideLeftIn 2s;
+}
+
+.slide-left-leave-active{
+  animation: slideLeftOut 2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes slideLeftIn{
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); };
+}
+
+@keyframes slideLeftOut{
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); };
+}
+
+
+/* DANS CE FICHIER, POSSIBILITE DE CHANGER LE THEME CSS DE
+BOOTSTRAP POUR LE FICHIER App.vue*/
+/*FICHIER TYPE POUR RETROUVER LES BALISE DE BASE, CSS/Bootstrap.css*/
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.2em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  color: white;
+  background-size: 100% 100%;
+}
+
+
+/*Partie pour un en-tête avec l'effet dégradé*/
+.nav-colored {
+    background-color: #333 !important;
+}
+
+.nav-transparent {
+    background-color: transparent !important;
+    display: none !important;
+}
+
+.bg-primary {
+    background-color: #333 !important;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Accessibilité tablette/mobile */
+@media screen and (max-width: 600px){
+  #maxime{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 15rem;
+  }
+
+  #tony{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 15rem;
+  }
+
+  .maxTraining{
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 600px){
+  #maxime{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 16rem;
+  }
+
+  #tony{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 16rem;
+  }
+
+  .maxTraining{
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .carousel img{
+    width: 80%;
+  }
+  .maxTraining{
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .carousel img{
+    width: 70%;
+  }
+  .maxTraining{
+    width: 40%;
+  }
+  #maxime{
+    margin-left: 50%;
+  }
+}

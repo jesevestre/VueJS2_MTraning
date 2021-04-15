@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+$font-family-base: "Roboto", "sans-serif";
+$enable-responsive-font-sizes: true;
+
+$color-1: #333;
+$color-2: #7209b7;
+$color-3: #f72585;
+$color-4: #4361ee;
+$color-5: #4cc9f0;
+$color-6: #237a94;
+
+$primary: $color-1;
+$secondary: $color-2;
+$success: $color-3;
+$info: $color-4;
+$warning: $color-5;
+$danger: $color-6;
+
+$dropdown-bg: $color-1;
+$dropdown-link-color: $color-5;
+$dropdown-link-hover-color: darken($color-5, 20%);
+$dropdown-link-hover-bg: darken($color-1, 10%);
+$dropdown-divider-bg: lighten($color-1, 10%);
+$dropdown-border-color: rgba($color-5, .15) !default;
+
+
+@import "css/bootstrap";
+
+html{
+    font-size: 15.25px;
+    letter-spacing: -0.02em;
+    word-spacing: 0.05em;
+}
+
+html,body,.carousel-inner,.carousel-item{height: 100%;}
+.carousel-item{
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption{
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 50%;
+}
+
+.navbar-toggler {
+    &:focus {
+        outline: none;
+    }
+    border: 1px solid $warning;
+    cursor: pointer;
+    width: 1.8em;
+    height: 1.8em;
+    padding: 0 0 0.15em 0.35em;
+
+
+    .navbar-toggler-inner,
+    .navbar-toggler-inner::before,
+    .navbar-toggler-inner::after
+    {
+        width: 1em;
+        height: 0.16em;
+        background-color: $warning;
+        position: absolute;
+    }
+
+    .navbar-toggler-inner::before
+    {
+        content: "";
+        display: block;
+        top: -0.3em;
+    }
+
+    .navbar-toggler-inner::after
+    {
+        content: "";
+        display: block;
+        bottom: -0.3em;
+    }
+
+    .navbar-toggler-inner{
+        transition: 0.2s;
+        transform: rotate(0deg);
+    }
+}
+
+.navbar-toggler.active {
+
+    .navbar-toggler-inner{
+        transition: 0.2s;
+        transform: rotate(45deg); // 45+360
+    }
+    .navbar-toggler-inner::before{
+        top: 0;
+        opacity: 0;
+    }
+    .navbar-toggler-inner::after{
+        bottom: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+.w100 {font-weight: 100 !important;}
+.w300 {font-weight: 100 !important;}
+.w400 {font-weight: 100 !important;}
+.w500 {font-weight: 100 !important;}
+.w700 {font-weight: 100 !important;}
+.w900 {font-weight: 100 !important;}
