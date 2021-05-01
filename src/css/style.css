@@ -64,11 +64,52 @@ h2 span{
   background:#fff;
   padding:0 20px;
 }
+ /*Formulaire de contact*/
+ .contact-form{
+  box-shadow: 30px 20px 10px #222 !important;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+  width: 80% !important;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+form i.fas {
+  margin-left: 20px;
+  color: #444;
+}
+
+h2{
+color: #333;
+background: -webkit-linear-gradient( #fff 0%, 
+#fff 45%, rgb(245,208,72) 46%, rgb(245,208,72) 54%, #fff 
+54%, #fff 100%);
+width: 80%;
+margin-left: 10%;
+}
+
+h2 span{
+background:#fff;
+padding:0 20px;
+}
+
 
 /* Effet zoom*/
 .profilCoach{
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.row {
+  width: 100%;
 }
 
 #maxime{
@@ -263,6 +304,17 @@ BOOTSTRAP POUR LE FICHIER App.vue*/
 }
 
 /* Accessibilité tablette/mobile */
+@media screen and (max-width: 330px){
+  h2{
+    color: #333;
+    background: -webkit-linear-gradient( #fff 0%, 
+    #fff 45%, rgb(255,255,255) 46%, rgb(255,255,255) 54%, #fff 
+    54%, #fff 100%);
+    width: 90%;
+    margin-left: 10%;
+  }
+}
+
 @media screen and (max-width: 600px){
   #maxime{
     display: block;
@@ -282,6 +334,15 @@ BOOTSTRAP POUR LE FICHIER App.vue*/
 
   .maxTraining{
     width: 65%;
+  }
+
+  .contactTitre{
+    color: #333;
+    background: -webkit-linear-gradient( #fff 0%, 
+    #fff 45%, rgb(255,255,255) 46%, rgb(255,255,255) 54%, #fff 
+    54%, #fff 100%);
+    width: 90%;
+    margin-left: 10%;
   }
 }
 

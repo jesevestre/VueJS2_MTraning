@@ -1,14 +1,37 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import './assets/custom.scss'
+import VueRouter from "vue-router"
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueRouter)
+
+import Home from "./views/Home"
+import Cours from "./views/Cours"
+import Tarifs from "./views/Tarifs"
+import Contact from "./views/Contact"
+import Disponibilite from "./views/Disponibilite"
+
+const router = new VueRouter({
+  mode: "history",
+  base: __dirname,
+  routes: [
+    { path: '/', component: Home },
+    { path: '/cours', component: Cours },
+    { path: '/tarifs', component: Tarifs, },
+    { path: '/contact', component: Contact },
+    { path: '/disponibilite', component: Disponibilite },
+    { path: "*", redirect: '/', },
+  ]
+})
+/*voir pour fermer la navbar quand on change de vue*/
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  router,
+  render: h => h(App),
 })
 
 
