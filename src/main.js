@@ -12,20 +12,32 @@ import Home from "./views/Home"
 import Cours from "./views/Cours"
 import Tarifs from "./views/Tarifs"
 import Contact from "./views/Contact"
-import Disponibilite from "./views/Disponibilite"
+import Boutique from "./views/Boutique"
+import BoutiqueParametre from "./views/BoutiqueParametre"
+import BoutiqueListe from "./views/BoutiqueListe"
+import BoutiqueShopping from "./views/BoutiqueShopping"
 
 const router = new VueRouter({
   mode: "history",
   base: __dirname,
   routes: [
     { path: '/', component: Home },
-    { path: '/cours', component: Cours },
-    { path: '/tarifs', component: Tarifs, },
-    { path: '/contact', component: Contact },
-    { path: '/disponibilite', component: Disponibilite },
+    { path: '/cours', component: Cours, name: "Cours" },
+    { path: '/tarifs', component: Tarifs, name: "Tarifs" },
+    { path: '/contact', component: Contact, name: "Contact" },
+    { path: '/boutique', component: Boutique, name: "Boutique" },
+    { path: '/boutique/boutiqueParametre', component: BoutiqueParametre, name: "BoutiqueParametre" },
+    { path: '/boutique/boutiqueListe', component: BoutiqueListe, name: "BoutiqueListe" },
+    { path: '/boutique/boutiqueShopping', component: BoutiqueShopping, name: "BoutiqueShopping" },
+
     { path: "*", redirect: '/', },
   ]
 })
+
+
+
+
+
 /*voir pour fermer la navbar quand on change de vue*/
 
 new Vue({

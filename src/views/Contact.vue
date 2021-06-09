@@ -1,7 +1,7 @@
 <template>
     <div>
         <br />
-        <h2 class="contactTitre"><span>FORMULAIRE DE CONTACT</span></h2>
+        <h2 class="titreBandeCouleur"><span>FORMULAIRE DE CONTACT</span></h2>
         <br />
 
         <div class="contact-form">
@@ -36,7 +36,7 @@
 <script>
 export default { 
     beforeRouteLeave (route, redirect, next) {
-        if(window.confirm("Voulez-vous vraiment quitté? Les informations du formulaire seront perdu !")){
+        if(window.confirm("En quittant, les informations du formulaire seront perdu !")){
             next();
         }
     }

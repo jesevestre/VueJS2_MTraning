@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        
+
         <div class="navbarwrap fixed-top bg-primary py-2">
             <div class="container">
 
@@ -18,7 +18,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item active">
-                            <router-link class="nav-link" to="/disponibilite">Les disponibilités</router-link>
+                            <router-link class="nav-link" to="/boutique">Boutique en ligne</router-link>
                         </li>
 
                         <li class="nav-item dropdown active">
@@ -29,18 +29,19 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <router-link class="dropdown-item" to="/cours">Remise en forme</router-link>
                                 <router-link class="dropdown-item" to="/cours">Musculation</router-link>
-                                <router-link class="dropdown-item" to="/cours">Réduire les douleurs de dos</router-link>
+                                <router-link class="dropdown-item" to="/cours">Douleurs de dos</router-link>
                                 <router-link class="dropdown-item" to="/cours">Abdo / fessier</router-link>
+                                <router-link class="dropdown-item" to="/cours">Rééducation</router-link>
                             </div>
                         </li>
 
                         <li class="nav-item active">
-                            <router-link class="nav-link" to="/contact">Nous contacter<span class="sr-only">(current)
+                            <router-link class="nav-link" to="/contact">Contact<span class="sr-only">(current)
                             </span></router-link>
                         </li>                        
 
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/tarifs">Les tarifs</router-link>
+                            <router-link class="nav-link" to="/tarifs">Tarifs & dispo</router-link>
                         </li>
                     </ul>
                 </div>

@@ -20,16 +20,16 @@
                     <a href="/" class="text-white" style="text-decoration: none;">Accueil</a>
                     </p>
                     <p>
-                    <a href="/disponibilite" class="text-white" style="text-decoration: none;">Les disponibilités</a>
+                    <a href="/boutique" class="text-white" style="text-decoration: none;">Boutique en ligne</a>
                     </p>
                     <p>
                     <a href="/cours" class="text-white" style="text-decoration: none;">Les cours</a>
                     </p>
                     <p>
-                    <a href="/contact" class="text-white" style="text-decoration: none;">Nous contacter</a>
+                    <a href="/contact" class="text-white" style="text-decoration: none;">Contact</a>
                     </p>
                     <p>
-                    <a href="/tarifs" class="text-white" style="text-decoration: none;">Les tarifs</a>
+                    <a href="/tarifs" class="text-white" style="text-decoration: none;">Tarifs & dispo</a>
                     </p>
                 </div>
 
